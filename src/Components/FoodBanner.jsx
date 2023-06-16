@@ -44,9 +44,21 @@ const FoodBanner = () => {
 
             <div className='mr-20'>
                 <img className='md:absolute w-28 top-20 right-44' src={leaf} alt="" />
-                <img className='md:absolute right-32 top-28 w-96 hover:animate-spin' src={food} alt="" />
 
-                <div className='bg-white rounded px-2 text-center mt-5 md:absolute md:right-60 opacity-80'>
+
+
+
+                <div className='bg-white rounded px-2 text-center mt-5 md:hidden block w-1/3 mx-36 opacity-80'>
+                    <p className='text-3xl font-bold text-orange-500 flex items-center justify-center'><span><FaCaretRight></FaCaretRight></span> 200K+</p>
+                    <p className='font-semibold'>People Delivered</p>
+                </div>
+
+
+
+
+                <img className='md:absolute md:right-32 top-28 md:w-96 md:mx-0 mx-10 hover:animate-spin' src={food} alt="" />
+
+                <div className='bg-white rounded px-2 text-center mt-5 md:absolute md:block hidden right-60 opacity-80'>
                     <p className='text-3xl font-bold text-orange-500 flex items-center justify-center'><span><FaCaretRight></FaCaretRight></span> 200K+</p>
                     <p className='font-semibold'>People Delivered</p>
                 </div>
