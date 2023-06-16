@@ -9,9 +9,9 @@ const FoodBanner = () => {
 
 
     return (
-        <div className='md:flex bg-sky-50 h-auto md:mb-10 my-text'>
+        <div className='md:flex bg-sky-50 h-auto md:mb-10 my-text md:relative'>
             <div >
-                <img className='w-28 md:absolute md:top-20 left-20 ' src={leaf} alt="" />
+                <img className='w-28 md:absolute md:top-1 left-10 ' src={leaf} alt="" />
             </div>
 
             <div>
@@ -23,14 +23,14 @@ const FoodBanner = () => {
 
 
 
-                    <div className="flex mx-auto md:w-96 md:mx-20 md:static mb-32">
+                    <div className="flex mx-auto md:w-96 md:mx-20 md:relative mb-32">
 
-                        <div className=" w-8 h-8 py-2 rounded-full md:absolute md:left-[120px] md:flex hidden bg-orange-500 mt-1"></div>
+                        <div className=" w-8 h-8 py-2 rounded-full md:absolute md:left-1 md:flex hidden bg-orange-500 mt-1"></div>
 
 
                         <input type="text" className="px-10 py-2 border border-green-700 rounded-full md:w-full" placeholder="Enter your Location" />
 
-                        <button type="submit" className="px-4 md:py-[10px] py-2 flex  justify-center rounded-full md:absolute md:left-[420px] md:w-[120px] text-center  bg-green-700 text-white font-semibold md:flex gap-2"><span className='mt-1'><FaSearch></FaSearch></span>Search</button>
+                        <button type="submit" className="px-4 md:py-[10px] py-2 flex  justify-center rounded-full md:absolute md:left-72 md:w-[120px] text-center  bg-green-700 text-white font-semibold md:flex gap-2"><span className='mt-1'><FaSearch></FaSearch></span>Search</button>
 
                     </div>
 
@@ -42,10 +42,8 @@ const FoodBanner = () => {
 
             </div>
 
-            <div className='mr-20'>
-                <img className='md:absolute w-28 top-20 right-44' src={leaf} alt="" />
-
-
+            <div className='mr-20 '>
+                <img className='md:absolute w-28 top-5 right-44' src={leaf} alt="" />
 
 
                 <div className='bg-white rounded px-2 text-center mt-5 md:hidden block w-1/3 mx-36 opacity-80'>
@@ -56,7 +54,7 @@ const FoodBanner = () => {
 
 
 
-                <img className='md:absolute md:right-32 top-28 md:w-96 md:mx-0 mx-10 hover:animate-spin' src={food} alt="" />
+                <img className='md:absolute md:right-32 top-10 md:w-96 md:mx-0 mx-10 hover:animate-spin' src={food} alt="" />
 
                 <div className='bg-white rounded px-2 text-center mt-5 md:absolute md:block hidden right-60 opacity-80'>
                     <p className='text-3xl font-bold text-orange-500 flex items-center justify-center'><span><FaCaretRight></FaCaretRight></span> 200K+</p>
